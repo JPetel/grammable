@@ -1,8 +1,16 @@
 class GramsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
-  
+
   def index
   end
+
+  def show
+    @gram = Gram.find_by_id(params[:id])
+    if @gram.blank?
+      render plain: 'Not Found', status: :not_found
+    end
+  end
+
 
   def new
     @gram = Gram.new
