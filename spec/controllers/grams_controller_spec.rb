@@ -2,6 +2,47 @@ require 'rails_helper'
 
 RSpec.describe GramsController, type: :controller do
 
+
+  #---------------- GRAM UPDATE -----------#
+  describe "gram#update action" do
+    it "should allow users to update grams" do
+      gram = FactoryBot.create(:gram, message: "Initial Value")
+      patch :update, params: {id: gram.id, gram: {message: 'Changed'}}
+      expect(response).to redirect_to root_path
+      gram.reload
+      expect(gram.message).to eq 'Changed'
+    end
+
+    it "should have http 404 error if the gram cant be found" do
+      patch :update, params: { id: "nooooope", gram: {message: 'Changed'}}
+      expect(response).to have_http_status(:not_found)
+    end
+
+    it "should render the edit form with an http status of unprocessable_entity" do
+      gram = FactoryBot.create(:gram, message: "Initial Value")
+      patch :update, params: {id: gram.id, gram: {message: ''}}
+      expect(response).to have_http_status(:unprocessable_entity)
+      gram.reload
+      expect(gram.message).to eq "Initial Value"
+    end
+  end
+
+  #----------------GRAM EDIT ---------------#
+  describe "gram#edit action" do
+    it "should successfully show the edit form if gram is found" do
+      gram = FactoryBot.create(:gram)
+      get :edit, params: {id: gram.id }
+      expect(response).to have_http_status(:success)
+    end
+
+    it "should return 404 not found message if the gram cant be found" do
+      get :edit, params: {id: 'nil' }
+      expect(response).to have_http_status(:not_found)
+    end
+  end 
+
+
+  #---------------GRAM SHOW ---------------#
   describe "grams#show action" do
     it "should successfully show the page if the gram is found" do 
       gram = FactoryBot.create(:gram)
@@ -16,11 +57,7 @@ RSpec.describe GramsController, type: :controller do
   end
 
 
-
-
-
-
-
+  #---------------GRAM INDEX ------------------#
 
   describe "grams#index action" do
     it "should show the page" do
@@ -44,6 +81,8 @@ RSpec.describe GramsController, type: :controller do
       expect(response).to have_http_status(:success)
     end
   end
+
+  #---------------- GRAM CREATE -----------#
 
   describe "grams#create action" do
 
