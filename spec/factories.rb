@@ -1,4 +1,5 @@
 FactoryBot.define do
+
   factory :user do
     sequence :email do |n|
        "dummyEmail#{n}@gmail.com" 
@@ -8,6 +9,7 @@ FactoryBot.define do
   end
 
   factory :gram do
+    photo {""}
     message {"hello"}
     association :user
   end
