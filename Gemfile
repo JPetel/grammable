@@ -64,6 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
+  gem "factory_bot_rails"
 end
 
 gem 'jquery-rails'
@@ -78,6 +79,8 @@ end
 gem 'simple_form'
 
 gem 'devise'
+
+
 
 
 
