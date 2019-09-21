@@ -1,4 +1,8 @@
 FactoryBot.define do
+  factory :comment do
+    
+  end
+
 
   factory :user do
     sequence :email do |n|
@@ -9,7 +13,7 @@ FactoryBot.define do
   end
 
   factory :gram do
-    photo {""}
+    photo {fixture_file_upload(Rails.root.join('spec','fixtures','picture.png').to_s, 'image/png')}
     message {"hello"}
     association :user
   end
