@@ -1,5 +1,8 @@
 @import "bootstrap";
 
+
+/* HOMEPAGE EDITS BEGIN */
+
 body {
   background-color: #fafafa;
   font-family: 'Josefin Sans', sans-serif;
@@ -12,6 +15,7 @@ body {
   border-bottom-style: solid;
   height: 70px;
   padding-top: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .top-nav .add {
@@ -29,6 +33,12 @@ body {
   color: #125688;
   font-size: 30px;
   font-family: 'Pacifico', cursive;
+  margin: 0 9rem 0 0;
+}
+
+.brand:hover {
+  cursor: pointer;
+
 }
 
 .card {
@@ -105,6 +115,133 @@ input {
   font-weight: bold;
   font-size: 18px;
 }
+
+
+/* HOMEPAGE EDITS END */
+
+
+
+
+
+
+
+
+
+
+/* SIGN-UP EDITS BEGIN */
+
+.sign-up h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.form-inputs {
+  padding: 1.5rem auto;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.form-actions {
+  width: 60%;
+  flex-direction: row;
+  display: flex;
+}
+
+.btn {
+  background-color: #0026ffd2;
+  margin: 0 2rem 0 0;
+  justify-items: start;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+  color: black;
+  transition: 650ms;
+  
+}
+
+.login-link {
+  padding-top: 0.8rem;
+}
+
+.login-link:hover {
+  cursor: pointer;
+}
+
+.notice {
+  margin-top:2rem;
+}
+
+
+
+
+
+/* SIGN-UP EDITS END */
+
+
+
+
+
+
+
+
+
+
+/* LOG-IN EDITS END */
+
+.log-in h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.form-inputs {
+  padding: 1.5rem auto;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.form-actions {
+  width: 60%;
+  flex-direction: row;
+  display: flex;
+}
+
+.btn {
+  background-color: #0026ffd2;
+  margin: 0 2rem 0 0;
+  justify-items: start;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+  color: black;
+  transition: 650ms;
+  
+}
+
+.login-link {
+  padding-top: 0.8rem;
+}
+
+.login-link:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  margin: 0 0 0 2rem;
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+/* LOG-IN EDITS END */
 
 
 
