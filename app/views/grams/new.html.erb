@@ -1,11 +1,24 @@
 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 card form">
+<div class="form-inputs">
 
-<h1>New Gram</h1>
+<div class="heading">
+  <h1>New Post</h1>
 
-<%= simple_form_for @gram do |f| %>
-  <%= f.input :message %>
-  <%= f.input :photo %>
-  <%= f.submit "Post!", class: 'my-btn' %>
-<% end %>
+  <div class="form-inputs">
+    <%= simple_form_for @gram do |f| %>
+      <%= f.input :message, placeholder: "Your Caption..." %>
+  
+     
+    <div class="photo-uploader">
+      <%= f.input :photo %>
+    </div>
+    </div>
+ </div>
+    <div class="form-actions">
+      <%= f.submit "Post!", class: 'btn' %>
+    </div>
+    <% end %>
 
+   
+  
 </div>

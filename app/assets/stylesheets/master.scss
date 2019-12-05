@@ -246,9 +246,59 @@ input {
 
 
 
+/* NEW POST BEGINS */
+
+.heading h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.photo-uploader {
+  padding-bottom: 1rem;
+}
+
+.photo-uploader input {
+  cursor: pointer;
+  background-color: #125688;
+  color: white;
+  width: 20%;
+}
+
+.photo-uploader input:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+  color: black;
+  transition: 650ms;
+  
+}
+
+
+/*NEW POST ENDS */
 
 
 
+
+
+
+
+
+
+
+/* HOME PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOME PAGE ENDS */
 
 
 
