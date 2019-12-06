@@ -14,12 +14,17 @@ body {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   height: 70px;
-  padding-top: 15px;
   font-family: 'Poppins', sans-serif;
+  z-index: 1500;
+  position: flex;
+  width: 100%;
+  padding-top: 10px;
+  
 }
 
 .top-nav .add {
   margin-top: 10px;
+  
 }
 
 .top-nav .add a {
@@ -48,6 +53,10 @@ body {
   border: 1px solid #e8e8e8;
   margin-top: 40px;
   padding: 0;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
 .card p, .card .message {
@@ -77,12 +86,26 @@ input {
 
 .my-btn {
   background-color: #125688;
-  width: 100%;
+  margin:auto;
+  display:block;
+  width: 50%;
   border: none;
   font-size: 24px;
   color: white;
   margin-top: 10px;
+
+  
 }
+
+.my-btn:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+  color: black;
+  transition: 650ms;
+  
+}
+
+
 
 .input.boolean {
   margin-left: 18px;
@@ -116,6 +139,10 @@ input {
   font-size: 18px;
 }
 
+.nav-buttons {
+  
+  
+}
 
 /* HOMEPAGE EDITS END */
 
@@ -284,18 +311,52 @@ input {
 
 
 
-
 /* HOME PAGE */
 
+.img-fluid {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
 
+.card p {
+  background-color: rgba(73, 72, 72, 0.103);
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
+}
 
+.gram-actions h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
+.gram-actions h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
 
+}
 
+.gram-actions .comment {
+  padding-left: 2rem;
+}
 
+.new_comment {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-
+.gram-actions a {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 /* HOME PAGE ENDS */

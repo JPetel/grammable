@@ -3,6 +3,7 @@
   <% @grams.each do |gram| %>
   <div class="card">
     <div class="handle"><%= gram.user.username %></div>
+    
       <%= image_tag gram.photo.to_s, class: 'img-fluid' %>
         <p>
         <%= gram.message %>
@@ -18,7 +19,7 @@
             <% gram.comments.each do |comment| %>
               <div class="comment">
                 <span class="comment_handle">
-                  <%= comment.user.email %>
+                  <%= comment.user.username %>
                 </span>
 
                 <%= comment.message %>
@@ -26,10 +27,7 @@
             <% end %>
           <h4>Add a comment</h4>
             <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
-              <%= f.input :message,
-                          required: true,
-                          autofocus: true,
-                          placeholder: "Add a comment here!" %>
+              <%= f.input :message, required: true, placeholder: "Add a comment here!" %>
               <%= f.submit 'Add Comment', class: 'my-btn' %>
             <% end %>
       </div>
