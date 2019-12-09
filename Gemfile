@@ -86,7 +86,7 @@ gem "figaro"
 
 gem "fog-aws"
 
-
+gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 
 
 
