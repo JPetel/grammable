@@ -1,24 +1,9 @@
-# README
+# Grammable
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An application that mimics Instagram. The app allows for users to create accounts and upload photos with captions;
+allows for the user to edit the caption and to leave comments on other users posts.
 
-Things you may want to cover:
 
-* Ruby version
+*This application utilizes Ruby on Rails, Ruby, HTML5, SCSS, Bootstrap, Devise, Simpleform, and others. 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*This application was a project from the University of Toronto School of Continuing Studies coding bootcamp.
