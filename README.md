@@ -8,5 +8,5 @@ allows for the user to edit the caption and to leave comments on other users pos
 
 *This application was a project from the University of Toronto School of Continuing Studies coding bootcamp.
 
-<img src="images/grammable.png" width="50%">
+<img src="images/grammable101.png" width="50%">
 
