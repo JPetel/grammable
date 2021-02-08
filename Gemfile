@@ -81,7 +81,7 @@ gem "simple_form", ">= 5.0.0"
 
 gem 'devise'
 
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 
 gem "figaro"
 
